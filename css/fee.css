@@ -1,0 +1,54 @@
+h2{
+    font-size: 36px;
+}
+
+.country-btn{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.country-btn:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+
+.pricing-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pricing-section {
+  background: #f8f8f8;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background-color: #e0e0e0;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+/* Stack sections vertically on small screens */
+@media (max-width: 500px) {
+  .pricing-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-section {
+    text-align: left;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+}
+

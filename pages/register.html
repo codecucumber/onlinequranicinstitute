@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quranic Institute Registration Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <div style="position: fixed; display: flex;
+    background-color: whitesmoke; flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 999; bottom:0;">
+        <a href="https://wa.me/9203170772560?text=Hey!%20I%20need%20to%20ask%20something." target="_blank" style="padding: 8px 0px;"><i class="bi bi-whatsapp icon" style="color: white; margin: 0;
+        padding: 10px; background-color: darkcyan; font-size: 40px;"></i></a>
+        <a style="padding: 8px 0px;" href="https://mail.google.com/mail/?view=cm&fs=1&to=sirhafizjawad@gmail.com&su=Hello&body=I%20need%20some%20info%3F" target="_blank"><i class="bi bi-envelope" style="background-color: rgb(104, 181, 181); margin: 0;
+        color: white; padding: 10px; font-size: 40px;"></i></a>
+    </div>
+    
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="../assets/logo.png"></a>
+            <div class="menu-btn">
+                <hr class="line">
+                <hr class="line">
+                <hr class="line">
+            </div>
+            <ul>
+                <li><a>CONTACT</a></li>
+                <li class="courses-wrapper">
+                    <a>COURSES</a>
+                    <div class="courses-menu-wrapper">
+                    <div class="courses-menu">
+                        <a href="courses/nooraniqaida.html">NOORANI QAIDA</a>
+                        <a href="courses/quranreading.html">QURAN READING</a>
+                        <a href="courses/qurantranslation.html">QURAN TRANSLATION</a>
+                        <a href="courses/quranmemorization.html">QURAN MEMORIZATION</a>
+                        <a href="courses/tajweed.html">TAJWEED</a>
+                        <a href="courses/islamicstudiesforkids.html" style="border: none;">ISLAMIC STUDIES FOR KIDS</a>
+                    </div>
+                    </div>
+                </li>
+                <li><a href="fee.html">TUITION FEE</a></li>
+                <li><a href="register.html" style="background-color: darkgreen; color: white;">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="p-wrap">
+    <div class="index-main" style="height: 250px;">
+        <div style="height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.752);"></div>
+    </div>
+    </div>
+    <main style="position: relative;">
+        <section style="z-index: 1; position: relative;">
+            <h1 class="title">
+                REGISTRATION
+            </h1>
+        </section>
+        <section class="sec" style="margin-top: 150px;">
+        <div style="color: black;" class="regbox">
+            <i class="bi bi-currency-exchange" style="font-size: 80px;"></i>
+            <h2 style="font-size: 40px; margin-top: 30px;">GET STARTED WITH YOUR FREE TRIAL NOW</h2>
+            <ul style="display: block; margin-top: 50px; list-style: square; text-align: justify;">
+                <li>Please enter your contact information</li>
+                <li>We will get back to you via Email or Phone for Trial session. If you like, you can call us or chat with us for more queries.</li>
+                <li>If you are satisfied with your trial session, you will be registered as a regular student.</li>
+            </ul>
+            
+            <h5 style="text-align: justify;">
+                <i class="bi bi-exclamation-circle" style="color: red;"></i> <span style="color: red;">NOTE:</span> After you submit either through email or whatsapp, there will be another window in each of its respective application where you will have to press the send button again in order to complete the submission.
+            </h5>
+        </div>
+        <form id="studentForm" style="display: flex; flex-direction: column;">
+            <label for="name">Student Name:</label>
+            <input id="name" placeholder="Enter Student Name" type="text" required>
+            <label for="contactNum">Whatsapp Number (e.g +9234567890):</label>
+            <input id="contactNum" placeholder="Enter Your Whatsapp Number" 
+            onblur="this.reportValidity()"
+            oninput="this.value = this.value.replace(/[^0-9+\s\-()]/g, '')"
+            pattern="^\+?[0-9]{7,15}$" type="tel">
+            <strong style="font-size: 12px; line-height: 1.5;">FORMAT:<br>*Start with a + symbol<br>*Enter your country code
+            <br>*Enter your number</strong>            
+            <div>
+            <input type="checkbox" id="isGuardian">
+            <label for="isGuardian">Do you have a Guardian?</label>
+            </div>
+            <div id="G-Box" style="display: none; flex-direction: column;">
+            <label for="guardianName">Guardian Name:</label>
+            <input id="guardianName" placeholder="Enter Your Guardian Name" type="text" required>
+            <label for="guardianNum">Guardian Phone Number:</label>
+            <input id="guardianNum" placeholder="Enter Guardian Phone Number" 
+            onblur="this.reportValidity()"
+            oninput="this.value = this.value.replace(/[^0-9+\s\-()]/g, '')"
+            pattern="^\+?[0-9]{7,15}$" type="tel" required></div>
+
+            <label for="country">Country Name:</label>
+            <input id="country" placeholder="Enter your Country Name" type="text" required>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter Your Email" required>
+            <label for="course">Select a Course:</label>
+            <select id="course" style="font-size: 16px; padding: 10px;" required>
+                <option value="">Select...</option>
+                <option>NOORANI QAIDA</option>
+                <option>QURAN READING</option>
+                <option>RULES OF TAJWEED</option>
+                <option>QURAN MEMORIZATION</option>
+                <option>PRAYERS, DUA & KALMA</option>
+                <option>ISLAMIC STUDIES FOR KIDS</option>
+            </select>
+            <label for="duration">Select a Course Duration:</label>
+            <select id="duration" style="font-size: 16px; padding: 10px;" required>
+                <option value="">Select...</option>
+                <option>5 DAYS/WEEK (MONDAY TO FRIDAY)</option>
+                <option>4 DAYS/WEEK (MONDAY TO THURSDAY)</option>
+                <option>3 DAYS/WEEK (MONDAY, TUESDAY, WEDNESDAY)</option>
+                <option>3 DAYS/WEEK (THURSDAY, FRIDAY, SATURDAY)</option>
+                <option>2 DAYS/WEEK (MONDAY, TUESDAY)</option>
+                <option>2 DAYS/WEEK (WEDNESDAY, THURSDAY)</option>
+                <option>2 DAYS/WEEK (FRIDAY, SATURDAY)</option>
+            </select>
+            <label for="time">Select a Class Time:</label>
+            <select id="time" style="font-size: 16px; padding: 10px;" required>
+                <option value="">Select...</option>
+                <option>Anytime in Morning</option>
+                <option>Anytime in Evening</option>
+                <option>Between 08AM to 10AM</option>
+                <option>Between 10AM to 12PM</option>
+                <option>Between 12PM to 2PM</option>
+                <option>Between 2PM to 4PM</option>
+                <option>Between 4PM to 6PM</option>
+                <option>Between 6PM to 8PM</option>
+                <option>Between 8PM to 10PM</option>
+            </select>
+
+            
+            <button id="submitWhatsApp" class="submit-btn">SUBMIT THROUGH<br>WHATSAPP</button>
+            <button id="submitEmail" class="submit-btn" style="margin-top: 10px;">SUBMIT THROUGH<br>EMAIL</button>
+        </form>
+    
+        </section>
+
+
+
+
+
+
+    </main>
+    <div class="g-wrap">
+    <div style="margin-top: 100px; z-index: 0; background-color: rgb(34, 53, 34); 
+    height: 400px; right: 0; position: absolute; left: 0;"></div>
+    </div>
+    <footer style="position: relative; margin-top: 150px;">
+        <div class="footer-first">
+        <div style="line-height: 1.5;">
+            <p><i class="bi bi-telephone icon" style="color: white; margin: 0;
+        font-size: 20px;"></i>
+        Phone: +92 0325 4018236</p>
+            <p> <i class="bi bi-envelope icon"  style="color: white; margin: 0;
+        font-size: 20px;"></i>
+                
+                Email: sirhafizjawad@gmail.com</p>
+            
+            <p>
+                <i class="bi bi-geo-alt icon"  style="color: white; margin: 0;
+        font-size: 20px;"></i>
+                Address: 50700 Gujrat Punjab Pakistan</p>
+        </div>
+        <p style="color: rgba(255, 255, 255, 0.5); text-align: left; position: relative; z-index: 1;">&copy; Online Quranic Institute Copyright 2025 - ALL RIGHTS RESERVED</p>
+       
+            <p>Developed by meerhamza.dev</p>
+        </div>
+        <img src="../assets/logo.png" style="max-width: 200px;" class="logo">
+    </footer>
+
+    <script src="../js/register.js" defer></script>
+</body>
+</html>
