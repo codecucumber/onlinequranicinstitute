@@ -21,11 +21,27 @@
     <header>
         <nav>
             <a><img class="logo" src="assets/logo.png"></a>
-            <div class="menu-btn">
-                <hr class="line">
-                <hr class="line">
-                <hr class="line">
+            <div onclick="slide()" class="menu-btn">
+                <i id="ic" class="bi bi-list" style="color: darkgreen; font-size: 40px;"></i>
             </div>
+            <ul id="m" class="menu-list">
+                <li><a href="pages/contact.html">CONTACT</a></li>
+                <li class="courses-wrapper">
+                    <a>COURSES</a>
+                    <div class="courses-menu-wrapper">
+                    <div class="courses-menu">
+                        <a href="pages/courses/nooraniqaida.html">NOORANI QAIDA</a>
+                        <a href="pages/courses/quranreading.html">QURAN READING</a>
+                        <a href="pages/courses/qurantranslation.html">QURAN TRANSLATION</a>
+                        <a href="pages/courses/quranmemorization.html">QURAN MEMORIZATION</a>
+                        <a href="pages/courses/tajweed.html">TAJWEED</a>
+                        <a href="pages/courses/islamicstudiesforkids.html" style="border: none;">ISLAMIC STUDIES FOR KIDS</a>
+                    </div>
+                    </div>
+                </li>
+                <li><a href="pages/fee.html">TUITION FEE</a></li>
+                <li><a href="pages/register.html">REGISTER</a></li>
+            </ul>
             <ul>
                 <li><a href="pages/contact.html">CONTACT</a></li>
                 <li class="courses-wrapper">
@@ -155,27 +171,27 @@ Empowering hearts and minds with authentic Islamic knowledge — anytime, anywhe
     </div>
     <footer style="position: relative; margin-top: 150px;">
         <div class="footer-first">
-        <div style="line-height: 1.5;">
+        <div style="line-height: 1.5; margin-bottom: 20px; margin-top: 40px;">
             <p><i class="bi bi-telephone icon" style="color: white; margin: 0;
-        font-size: 20px;"></i>
+        font-size: 14px;"></i>
         Phone: +92 0325 4018236</p>
             <p> <i class="bi bi-envelope icon"  style="color: white; margin: 0;
-        font-size: 20px;"></i>
+        font-size: 14px;"></i>
                 
                 Email: sirhafizjawad@gmail.com</p>
             
             <p>
                 <i class="bi bi-geo-alt icon"  style="color: white; margin: 0;
-        font-size: 20px;"></i>
+        font-size: 14px;"></i>
                 Address: 50700 Gujrat Punjab Pakistan</p>
         </div>
-        <p class="copyright" style="color: rgba(255, 255, 255, 0.5); text-align: left; position: relative; z-index: 1;">&copy; Online Quranic Institute Copyright 2025 - ALL RIGHTS RESERVED</p>
+        <p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 20px; text-align: left; position: relative; z-index: 1;">&copy; Online Quranic Institute Copyright 2025 - ALL RIGHTS RESERVED</p>
        
-            <p class="credit">Developed by meerhamza.dev</p>
+            <p>Developed by meerhamza.dev</p>
         </div>
-        
-        <img src="assets/logo.png" style="max-width: 200px;" class="logo">
-         
+        <img src="../assets/logo.png" style="max-width: 150px;" class="logo">
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
