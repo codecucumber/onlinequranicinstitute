@@ -86,6 +86,7 @@ a{
     padding: 10px;
     border: none;
     justify-self: center;
+    width: fit-content;
     display: flex;
     margin-top: 50px;
     font-weight: bolder;
