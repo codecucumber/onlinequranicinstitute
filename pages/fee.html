@@ -13,22 +13,20 @@
     background-color: whitesmoke; flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     z-index: 999; bottom:0;">
-        <a href="https://wa.me/9203170772560?text=Hey!%20I%20need%20to%20ask%20something." target="_blank" style="padding: 8px 0px;"><i class="bi bi-whatsapp icon" style="color: white; margin: 0;
+        <a href="https://wa.me/9203026203387?text=Hey!%20I%20need%20to%20ask%20something." target="_blank" style="padding: 8px 0px;"><i class="bi bi-whatsapp icon" style="color: white; margin: 0;
         padding: 10px; background-color: darkcyan; font-size: 40px;"></i></a>
-        <a style="padding: 8px 0px;" href="https://mail.google.com/mail/?view=cm&fs=1&to=sirhafizjawad@gmail.com&su=Hello&body=I%20need%20some%20info%3F" target="_blank"><i class="bi bi-envelope" style="background-color: rgb(104, 181, 181); margin: 0;
+        <a style="padding: 8px 0px;" href="https://mail.google.com/mail/?view=cm&fs=1&to=jawadbashir0300@gmail.com&su=Hello&body=I%20need%20some%20info%3F" target="_blank"><i class="bi bi-envelope" style="background-color: rgb(104, 181, 181); margin: 0;
         color: white; padding: 10px; font-size: 40px;"></i></a>
     </div>
     
     <header>
         <nav>
-            <a href="../index.html"><img class="logo" src="../assets/logo.png"></a>
-            <div class="menu-btn">
-                <hr class="line">
-                <hr class="line">
-                <hr class="line">
+            <a><img class="logo" src="../assets/logo.png"></a>
+            <div onclick="slide()" class="menu-btn">
+                <i id="ic" class="bi bi-list" style="color: darkgreen; font-size: 40px;"></i>
             </div>
-            <ul>
-                <li><a>CONTACT</a></li>
+            <ul id="m" class="menu-list">
+                <li><a href="contact.html">CONTACT</a></li>
                 <li class="courses-wrapper">
                     <a>COURSES</a>
                     <div class="courses-menu-wrapper">
@@ -42,11 +40,30 @@
                     </div>
                     </div>
                 </li>
-                <li><a href="fee.html" style="background-color: darkgreen; color: white;">TUITION FEE</a></li>
+                <li><a href="fee.html">TUITION FEE</a></li>
+                <li><a href="register.html">REGISTER</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li class="courses-wrapper">
+                    <a>COURSES</a>
+                    <div class="courses-menu-wrapper">
+                    <div class="courses-menu">
+                        <a href="courses/nooraniqaida.html">NOORANI QAIDA</a>
+                        <a href="courses/quranreading.html">QURAN READING</a>
+                        <a href="courses/qurantranslation.html">QURAN TRANSLATION</a>
+                        <a href="courses/quranmemorization.html">QURAN MEMORIZATION</a>
+                        <a href="courses/tajweed.html">TAJWEED</a>
+                        <a href="courses/islamicstudiesforkids.html" style="border: none;">ISLAMIC STUDIES FOR KIDS</a>
+                    </div>
+                    </div>
+                </li>
+                <li><a href="fee.html">TUITION FEE</a></li>
                 <li><a href="register.html">REGISTER</a></li>
             </ul>
         </nav>
     </header>
+    
     <div class="p-wrap">
     <div class="index-main" style="height: 250px;">
         <div style="height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.752);"></div>
@@ -125,11 +142,11 @@ Payments can be made through PayPal using either a credit or debit card.</p>
         <div style="line-height: 1.5; margin-bottom: 20px; margin-top: 40px;">
             <p><i class="bi bi-telephone icon" style="color: white; margin: 0;
         font-size: 14px;"></i>
-        Phone: +92 0325 4018236</p>
+        Phone: +92 0302 6203387</p>
             <p> <i class="bi bi-envelope icon"  style="color: white; margin: 0;
         font-size: 14px;"></i>
                 
-                Email: sirhafizjawad@gmail.com</p>
+                Email: jawadbashir0300@gmail.com</p>
             
             <p>
                 <i class="bi bi-geo-alt icon"  style="color: white; margin: 0;
@@ -143,6 +160,7 @@ Payments can be made through PayPal using either a credit or debit card.</p>
         <img src="../assets/logo.png" style="max-width: 150px;" class="logo">
     </footer>
 
+    <script src="../main.js"></script>
     <script src="../js/fee.js" defer></script>
 </body>
 </html>

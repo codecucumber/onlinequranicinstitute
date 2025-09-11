@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const message = encodeURIComponent(messageInput.value.trim());
 
         const fullMessage = `Hello, my name is ${decodeURIComponent(name)}. ${decodeURIComponent(message)}`;
-        const whatsappLink = `https://wa.me/9203170772560?text=${encodeURIComponent(fullMessage)}`;
+        const whatsappLink = `https://wa.me/9203026203387?text=${encodeURIComponent(fullMessage)}`;
 
         window.open(whatsappLink, '_blank');
     });
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const subject = `Hello from ${decodeURIComponent(name)}`;
         const body = `My name is ${decodeURIComponent(name)}.\n\n${decodeURIComponent(message)}`;
-        const emailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=sirhafizjawad@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const emailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=jawadbashir0300@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         window.open(emailLink, '_blank');
     });

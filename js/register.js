@@ -64,7 +64,7 @@ const time = document.getElementById("time").value;
                 `Duration: ${data.duration}\n` +
                 `Class Time: ${data.time}`;
 
-            const waNumber = "9203170772560"; // Change to your real number if needed
+            const waNumber = "9203026203387"; // Change to your real number if needed
             const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
             window.open(waUrl, '_blank');
 
@@ -91,7 +91,7 @@ const time = document.getElementById("time").value;
                 `Duration: ${data.duration}\n` +
                 `Class Time: ${data.time}`;
 
-            const emailAddress = "sirhafizjawad@gmail.com";
+            const emailAddress = "jawadbashir0300@gmail.com";
             const subject = "New Student Registration";
             const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
